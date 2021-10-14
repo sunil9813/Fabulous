@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="head_container flex1">
+      <div class="box flex">
+        <div class="head_text">
+          <label>Email:</label>
+          <span>demo@example.com</span>
+        </div>
+        <div class="head_text">
+          <label>Today's Deal:</label>
+          <span>Sale off 50%</span>
+        </div>
+      </div>
+      <div class="box flex">
+        <div class="head_text">
+          <select>
+            <option>Language</option>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Nepali</option>
+          </select>
+        </div>
+        <div class="head_text">
+          <select>
+            <option>Currency</option>
+            <option>Euro</option>
+            <option>Pound Sterling</option>
+            <option>Us Dollar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <header>
+    <div class="head_container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <nav>
+          <ul id="menuitem">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">About</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="contact.html">Projects</a></li>
+            <li><a href="account.html">Blog</a></li>
+            <li><a href="account.html">Contact</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+        <div class="account">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-user"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "600px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  <section class="home">
+    <div class="head_container">
+      <div class="owl-carousel owl-theme">
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="left top">
+              <h3>Electronics</h3>
+              <h1>New EarBuds</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button class="btn1">SHOP NOW</button>
+            </div>
+            <div class="right">
+              <img src="image/slide1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="right">
+              <img src="image/slide3.jpg" alt="">
+            </div>
+            <div class="left top">
+              <h3>Electronics</h3>
+              <h1>New EarBuds</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button class="btn1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="left top">
+              <h3>Electronics</h3>
+              <h1>New EarBuds</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button class="btn1">SHOP NOW</button>
+            </div>
+            <div class="right">
+              <img src="image/slide2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Javascript -->
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: false,
+      });
+    });
+  </script>
+
+
+
+
+
+  <section class="offer ">
+    <div class="container  center">
+      <div class="content flex  ">
+        <div class="box flex">
+          <div class="text">
+            <p>The Latest arrival</p>
+            <h3>One Step <span>Pairing</span> </h3>
+            <button class="btn2">SHOP NOW</button>
+
+            <div class="bottom_text">
+              <p><span>STEAL</span> OF</p>
+              <p>THE <span>STEAL</span></p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="image/o1.png" alt="">
+          </div>
+        </div>
+        <div class="box box2 flex">
+          <div class="img">
+            <img src="image/o2.png" alt="">
+          </div>
+          <div class="text">
+            <div class="text_top">
+              <p>SALE UP TO <label>70%</label> </p>
+            </div>
+            <p>The Latest arrival</p>
+            <h3>One Step <span>Pairing</span> </h3>
+            <button class="btn2">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="about">
+    <div class="container flex top">
+      <div class="left">
+        <img src="image/a.png" alt="">
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h3>THE PRODUCTS</h3>
+          <h2>Benefits Of Fabulous</h2>
+        </div>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <ul class="list grid">
+            <li>Higher productivity </li>
+            <li> Stress release Sound Quality </li>
+            <li> Sound Quality </li>
+            <li> Concentration </li>
+            <li> High Quality Audio </li>
+            <li> Portability </li>
+            <li> Noise Cancellin </li>
+          </ul>
+          <button>VIEW MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="time">
+    <div class="container flex mtop">
+      <div class="left mtop">
+        <h2>Best Deal Of the Day </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h1>149 : 08 : 09 : 06</h1>
+        <button>VIEW MORE</button>
+      </div>
+      <div class="right">
+        <img src="image/slide1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>Fabulous Products</h2>
+      </div>
+
+      <div class="content mtop grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/p1.jpg">
+            <img src="image/p2.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p3.jpg">
+            <img src="image/p4.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p5.jpg">
+            <img src="image/p6.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p7.jpg">
+            <img src="image/p8.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p4.jpg">
+            <img src="image/p8.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p6.jpg">
+            <img src="image/p7.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>$122.00 </span> $110.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="services mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>Our Services </h2>
+      </div>
+
+      <div class="content grid mtop center">
+        <div class="box">
+          <div class="img">
+            <i class="fas fa-running"></i>
+          </div>
+          <div class="text">
+            <h3>Running</h3>
+            <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt .</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="text">
+            <h3>Running</h3>
+            <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt .</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <i class="fas fa-temperature-high"></i>
+          </div>
+          <div class="text">
+            <h3>Running</h3>
+            <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt .</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <i class="fas fa-street-view"></i>
+          </div>
+          <div class="text">
+            <h3>Running</h3>
+            <p> Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="customer mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE PRODUCTS</h3>
+        <h2>Customer Review </h2>
+      </div>
+
+
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              <div class="img">
+                <img src="image/t1.png" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              <div class="img">
+                <img src="image/t2.png" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              <div class="img">
+                <img src="image/t1.png" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+        <div class="item">
+          <div class="box flex">
+            <div class="image">
+              <div class="img">
+                <img src="image/t2.png" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <h1>Luies Charls <span>Web Designer</span> </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="brand">
+    <div class="container">
+      <div class="owl-carousel owl-carousel3 owl-theme mtop">
+        <div class="item">
+          <div class="img">
+            <img src="image/b1.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b2.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b3.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b4.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b5.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b3.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/b1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel3').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+          dots: true
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <footer>
+    <div class="container mtop grid">
+      <div class="box">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <div class="social_media flex">
+          <img src="https://img.icons8.com/color/48/000000/facebook.png" />
+          <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+          <img src="https://img.icons8.com/color/48/000000/twitter-squared.png" />
+          <img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" />
+          <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+        </div>
+      </div>
+
+      <div class="box center">
+        <div class="news_icon">
+          <i class="fas fa-envelope-open-text"></i>
+        </div>
+        <div class="news">
+          <h2>Join Our Newsletter </h2>
+          <p>Enter your email address and recived news.</p>
+          <div class="send flex1">
+            <input type="text" placeholder="Enter Your Email">
+            <span class="fas fa-paper-plane"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Contact Us</h3>
+            <label>+123 456 7898</label>
+          </div>
+        </div>
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <label>info@example.com</label>
+          </div>
+        </div>
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <label>151, Demo Store United States</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <div class="container flex1">
+      <label>Powered By Dot Studio 2021</label>
+
+      <div class="payment">
+        <img src="https://img.icons8.com/color/48/000000/visa.png" />
+        <img src="https://img.icons8.com/fluency/48/000000/mastercard.png" />
+        <img src="https://img.icons8.com/color/48/000000/discover.png" />
+        <img src="https://img.icons8.com/color/48/000000/amex.png" />
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
